@@ -1,0 +1,10 @@
+segment,start_s,end_s,label,event_window,notes
+static,0.000,10.000,static,,no-motion baseline
+fall1,12.000,27.017,fall,18.0-22.0,actual fall 18.0-22.0
+fall2,33.017,49.067,fall,40.0-44.0,actual fall 40.0-44.0
+fall3,55.067,70.250,fall,62.0-66.0,actual fall 62.0-66.0 (1:02-1:06)
+normal1,76.250,93.567,normal,,ADL normal
+normal2,95.567,114.883,normal,,ADL normal
+normal3,116.883,136.533,normal,,ADL normal
+two_objects,138.533,166.533,tracking,,two targets
+virat,168.533,195.767,complex,,real complex scene

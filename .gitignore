@@ -1,0 +1,24 @@
+# Vivado generated files
+*.jou
+*.log
+*.str
+*.dcp
+*.bit
+.Xil/
+project.runs/
+project.cache/
+project.hw/
+project.ip_user_files/
+project.sim/
+
+# Python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large or external media
+data/test_videos/
+*.mp4

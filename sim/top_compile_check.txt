@@ -1,0 +1,3 @@
+PASS
+Icarus compiled 44 RTL files with top as the top module.
+Date: 2026-11-03

@@ -1,0 +1,5 @@
+test_name,input_video,window_start_s,window_end_s,metric,expected,observed,evidence_file,status,notes
+static_no_motion,static.mp4,0,10,false_roi_rate,0,,,planned,
+single_target,object.mp4,0,20,target_continuity,stable,,,planned,
+fall_event,fall.mp4,18,22,correct_alarm,detected,,,planned,
+global_change,change.mp4,0,10,large_false_box,none,,,planned,
