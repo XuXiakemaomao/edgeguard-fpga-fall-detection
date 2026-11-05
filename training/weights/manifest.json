@@ -1,0 +1,83 @@
+{
+  "class_order": [
+    "normal",
+    "fall",
+    "other"
+  ],
+  "class_encoding": {
+    "0": "normal",
+    "1": "fall",
+    "2": "other"
+  },
+  "layout": {
+    "conv": "idx = (oc*IC + ic)*9 + (kh*3 + kw)",
+    "fc": "idx = oc*32 + k",
+    "mem_format": "one hex value per line, two's complement"
+  },
+  "layers": [
+    {
+      "name": "L1",
+      "s_in": 0.0078125,
+      "s_w": 0.001953125,
+      "s_out": 0.001953125,
+      "mult": 16384,
+      "shift": 21
+    },
+    {
+      "name": "L2",
+      "s_in": 0.001953125,
+      "s_w": 0.001953125,
+      "s_out": 0.0009765625,
+      "mult": 16384,
+      "shift": 22
+    },
+    {
+      "name": "L3",
+      "s_in": 0.0009765625,
+      "s_w": 0.001953125,
+      "s_out": 0.00048828125,
+      "mult": 16384,
+      "shift": 22
+    },
+    {
+      "name": "FC",
+      "s_in": 0.00048828125,
+      "s_w": 0.001953125,
+      "s_out": 0.000244140625,
+      "mult": 16384,
+      "shift": 22
+    }
+  ],
+  "checkpoint_sha256": "N/A-structural-golden",
+  "checkpoint_note": "weights are deterministic structural golden values, not a trained semantic checkpoint",
+  "files": {
+    "qin": "ac5c17b9dae6dd50c02e3634fbb9f58470453092392fd08483f02d8176ae365d",
+    "w1": "08cacb2f03dfcc90620575f3e8a32ec0a41f18f5afc6d712312396231472b300",
+    "w2": "81126c04b10f954f1f7b6e238163e65a18bc020d11cf51b9751331616f63ee56",
+    "w3": "0a0113ecf2cd57afa4bd72a92bee89b7fbf47382a11d79c62d3f77fb56b31533",
+    "w4": "8860780838c7eec1d60255feacbc2438d0374884a1dc341875f20a19e988cd56",
+    "b1": "929aaeb17139e17352d97590250e9d8094037fe0833662b40fe0c1bbfd207df3",
+    "b2": "4c8b2ece8ef3eac115b563c43ad4e415ae879c9ae9b989b06cf5a8f4473d4ff6",
+    "b3": "e3254b0b0c3eb7a6427b4f4109fcf0e8ff6d12d7126f230e1760b6e192a435e7",
+    "b4": "ca8febd4de702931c6178a7bb379b74c6a7690db67b3e4d31b2a1439d08e7e33",
+    "mult": "195d4c5b1ac80cd14a2c740f3724a45453f869fbcfd5e358f1a7dcb36b5c5c1a",
+    "shift": "29d28c911acf6d9cc324bb948d6b09d255bbff8050c15c750c9d7da8e2df843a"
+  },
+  "file_lengths": {
+    "qin": 256,
+    "w1": 72,
+    "b1": 8,
+    "w2": 1152,
+    "b2": 16,
+    "w3": 4608,
+    "b3": 32,
+    "w4": 96,
+    "b4": 3,
+    "mult": 32,
+    "shift": 32
+  },
+  "input": {
+    "size": 48,
+    "quant": "q_in = round((g-127.5)*256/255) via qin.mem"
+  }
+}

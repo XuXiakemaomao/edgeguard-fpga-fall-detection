@@ -1,0 +1,434 @@
+{
+  "train": {
+    "n": 3372,
+    "accuracy": 0.9137010676156584,
+    "recall": {
+      "normal": 0.9377806286080821,
+      "fall": 0.9297520661157025,
+      "other": 0.8796087283671934
+    },
+    "precision": {
+      "normal": 0.9075108628181254,
+      "fall": 0.8704061895551257,
+      "other": 0.9397106109324759
+    },
+    "confusion": [
+      [
+        1462,
+        34,
+        63
+      ],
+      [
+        22,
+        450,
+        12
+      ],
+      [
+        127,
+        33,
+        1169
+      ]
+    ],
+    "macro_recall": 0.9157138076969926,
+    "per_class_n": {
+      "normal": 1559,
+      "fall": 484,
+      "other": 1329
+    }
+  },
+  "val": {
+    "n": 1100,
+    "accuracy": 0.889090909090909,
+    "recall": {
+      "normal": 0.8787878787878788,
+      "fall": 0.9363636363636364,
+      "other": 0.8872053872053872
+    },
+    "precision": {
+      "normal": 0.883248730964467,
+      "fall": 0.7253521126760564,
+      "other": 0.9343971631205674
+    },
+    "confusion": [
+      [
+        348,
+        17,
+        31
+      ],
+      [
+        1,
+        103,
+        6
+      ],
+      [
+        45,
+        22,
+        527
+      ]
+    ],
+    "macro_recall": 0.9007856341189675,
+    "per_class_n": {
+      "normal": 396,
+      "fall": 110,
+      "other": 594
+    }
+  },
+  "test": {
+    "n": 1142,
+    "accuracy": 0.819614711033275,
+    "recall": {
+      "normal": 0.7073170731707317,
+      "fall": 0.9095744680851063,
+      "other": 0.8731617647058824
+    },
+    "precision": {
+      "normal": 0.847953216374269,
+      "fall": 0.7916666666666666,
+      "other": 0.8133561643835616
+    },
+    "confusion": [
+      [
+        290,
+        24,
+        96
+      ],
+      [
+        4,
+        171,
+        13
+      ],
+      [
+        48,
+        21,
+        475
+      ]
+    ],
+    "macro_recall": 0.8300177686539069,
+    "per_class_n": {
+      "normal": 410,
+      "fall": 188,
+      "other": 544
+    },
+    "video_level": {
+      "clips": 27,
+      "clips_dominated_by_true_class": 24,
+      "clip_accuracy": 0.8888888888888888,
+      "table": [
+        {
+          "video": "adl-35-cam0.mp4",
+          "true_class": "normal",
+          "n": 76,
+          "pred_frac": {
+            "normal": 0.8421052631578947,
+            "fall": 0.10526315789473684,
+            "other": 0.05263157894736842
+          },
+          "dominant": "normal"
+        },
+        {
+          "video": "adl-35-cam0.mp4",
+          "true_class": "other",
+          "n": 132,
+          "pred_frac": {
+            "normal": 0.15151515151515152,
+            "fall": 0.05303030303030303,
+            "other": 0.7954545454545454
+          },
+          "dominant": "other"
+        },
+        {
+          "video": "adl-36-cam0.mp4",
+          "true_class": "normal",
+          "n": 70,
+          "pred_frac": {
+            "normal": 0.44285714285714284,
+            "fall": 0.0,
+            "other": 0.5571428571428572
+          },
+          "dominant": "other"
+        },
+        {
+          "video": "adl-36-cam0.mp4",
+          "true_class": "other",
+          "n": 80,
+          "pred_frac": {
+            "normal": 0.025,
+            "fall": 0.0,
+            "other": 0.975
+          },
+          "dominant": "other"
+        },
+        {
+          "video": "adl-37-cam0.mp4",
+          "true_class": "normal",
+          "n": 76,
+          "pred_frac": {
+            "normal": 0.7368421052631579,
+            "fall": 0.013157894736842105,
+            "other": 0.25
+          },
+          "dominant": "normal"
+        },
+        {
+          "video": "adl-37-cam0.mp4",
+          "true_class": "other",
+          "n": 109,
+          "pred_frac": {
+            "normal": 0.07339449541284404,
+            "fall": 0.027522935779816515,
+            "other": 0.8990825688073395
+          },
+          "dominant": "other"
+        },
+        {
+          "video": "adl-38-cam0.mp4",
+          "true_class": "normal",
+          "n": 38,
+          "pred_frac": {
+            "normal": 0.7631578947368421,
+            "fall": 0.02631578947368421,
+            "other": 0.21052631578947367
+          },
+          "dominant": "normal"
+        },
+        {
+          "video": "adl-38-cam0.mp4",
+          "true_class": "other",
+          "n": 23,
+          "pred_frac": {
+            "normal": 0.21739130434782608,
+            "fall": 0.043478260869565216,
+            "other": 0.7391304347826086
+          },
+          "dominant": "other"
+        },
+        {
+          "video": "adl-39-cam0.mp4",
+          "true_class": "normal",
+          "n": 3,
+          "pred_frac": {
+            "normal": 0.0,
+            "fall": 0.0,
+            "other": 1.0
+          },
+          "dominant": "other"
+        },
+        {
+          "video": "adl-39-cam0.mp4",
+          "true_class": "other",
+          "n": 6,
+          "pred_frac": {
+            "normal": 0.0,
+            "fall": 0.0,
+            "other": 1.0
+          },
+          "dominant": "other"
+        },
+        {
+          "video": "adl-40-cam0.mp4",
+          "true_class": "normal",
+          "n": 4,
+          "pred_frac": {
+            "normal": 0.5,
+            "fall": 0.0,
+            "other": 0.5
+          },
+          "dominant": "normal"
+        },
+        {
+          "video": "adl-40-cam0.mp4",
+          "true_class": "other",
+          "n": 3,
+          "pred_frac": {
+            "normal": 0.0,
+            "fall": 0.0,
+            "other": 1.0
+          },
+          "dominant": "other"
+        },
+        {
+          "video": "fall-26-cam0.mp4",
+          "true_class": "normal",
+          "n": 11,
+          "pred_frac": {
+            "normal": 0.8181818181818182,
+            "fall": 0.18181818181818182,
+            "other": 0.0
+          },
+          "dominant": "normal"
+        },
+        {
+          "video": "fall-26-cam0.mp4",
+          "true_class": "fall",
+          "n": 49,
+          "pred_frac": {
+            "normal": 0.02040816326530612,
+            "fall": 0.9387755102040817,
+            "other": 0.04081632653061224
+          },
+          "dominant": "fall"
+        },
+        {
+          "video": "fall-26-cam0.mp4",
+          "true_class": "other",
+          "n": 31,
+          "pred_frac": {
+            "normal": 0.0,
+            "fall": 0.03225806451612903,
+            "other": 0.967741935483871
+          },
+          "dominant": "other"
+        },
+        {
+          "video": "fall-27-cam0.mp4",
+          "true_class": "normal",
+          "n": 37,
+          "pred_frac": {
+            "normal": 0.8918918918918919,
+            "fall": 0.0,
+            "other": 0.10810810810810811
+          },
+          "dominant": "normal"
+        },
+        {
+          "video": "fall-27-cam0.mp4",
+          "true_class": "fall",
+          "n": 27,
+          "pred_frac": {
+            "normal": 0.0,
+            "fall": 1.0,
+            "other": 0.0
+          },
+          "dominant": "fall"
+        },
+        {
+          "video": "fall-27-cam0.mp4",
+          "true_class": "other",
+          "n": 40,
+          "pred_frac": {
+            "normal": 0.0,
+            "fall": 0.05,
+            "other": 0.95
+          },
+          "dominant": "other"
+        },
+        {
+          "video": "fall-28-cam0.mp4",
+          "true_class": "normal",
+          "n": 26,
+          "pred_frac": {
+            "normal": 0.8461538461538461,
+            "fall": 0.038461538461538464,
+            "other": 0.11538461538461539
+          },
+          "dominant": "normal"
+        },
+        {
+          "video": "fall-28-cam0.mp4",
+          "true_class": "fall",
+          "n": 40,
+          "pred_frac": {
+            "normal": 0.075,
+            "fall": 0.8,
+            "other": 0.125
+          },
+          "dominant": "fall"
+        },
+        {
+          "video": "fall-28-cam0.mp4",
+          "true_class": "other",
+          "n": 35,
+          "pred_frac": {
+            "normal": 0.05714285714285714,
+            "fall": 0.08571428571428572,
+            "other": 0.8571428571428571
+          },
+          "dominant": "other"
+        },
+        {
+          "video": "fall-29-cam0.mp4",
+          "true_class": "normal",
+          "n": 46,
+          "pred_frac": {
+            "normal": 0.8260869565217391,
+            "fall": 0.06521739130434782,
+            "other": 0.10869565217391304
+          },
+          "dominant": "normal"
+        },
+        {
+          "video": "fall-29-cam0.mp4",
+          "true_class": "fall",
+          "n": 29,
+          "pred_frac": {
+            "normal": 0.0,
+            "fall": 1.0,
+            "other": 0.0
+          },
+          "dominant": "fall"
+        },
+        {
+          "video": "fall-29-cam0.mp4",
+          "true_class": "other",
+          "n": 50,
+          "pred_frac": {
+            "normal": 0.1,
+            "fall": 0.06,
+            "other": 0.84
+          },
+          "dominant": "other"
+        },
+        {
+          "video": "fall-30-cam0.mp4",
+          "true_class": "normal",
+          "n": 23,
+          "pred_frac": {
+            "normal": 0.2608695652173913,
+            "fall": 0.34782608695652173,
+            "other": 0.391304347826087
+          },
+          "dominant": "other"
+        },
+        {
+          "video": "fall-30-cam0.mp4",
+          "true_class": "fall",
+          "n": 43,
+          "pred_frac": {
+            "normal": 0.0,
+            "fall": 0.8604651162790697,
+            "other": 0.13953488372093023
+          },
+          "dominant": "fall"
+        },
+        {
+          "video": "fall-30-cam0.mp4",
+          "true_class": "other",
+          "n": 35,
+          "pred_frac": {
+            "normal": 0.17142857142857143,
+            "fall": 0.02857142857142857,
+            "other": 0.8
+          },
+          "dominant": "other"
+        }
+      ]
+    }
+  },
+  "acceptance": {
+    "fall_recall_ge_0.90": true,
+    "fall_precision_ge_0.85": false,
+    "all_class_recall_nonzero": true,
+    "all_class_recall_ge_0.90": false,
+    "thresholds": {
+      "fall_recall": 0.9,
+      "fall_precision": 0.85,
+      "each_recall": 0.9
+    }
+  },
+  "class_order": [
+    "normal",
+    "fall",
+    "other"
+  ],
+  "evaluation": "integer reference (bit-exact with cnn_core.v)"
+}

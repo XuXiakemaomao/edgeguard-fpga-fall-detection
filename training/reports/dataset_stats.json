@@ -1,0 +1,33 @@
+{
+  "train": {
+    "total": 6743,
+    "per_class": {
+      "normal": 3118,
+      "fall": 967,
+      "other": 2658
+    },
+    "videos": 47
+  },
+  "val": {
+    "total": 1100,
+    "per_class": {
+      "normal": 396,
+      "fall": 110,
+      "other": 594
+    },
+    "videos": 11
+  },
+  "test": {
+    "total": 1142,
+    "per_class": {
+      "normal": 410,
+      "fall": 188,
+      "other": 544
+    },
+    "videos": 11
+  },
+  "files": {
+    "dataset": "C:\\Users\\syh61\\Desktop\\workplace\\cnn_subsystem\\model\\dataset.npz",
+    "split_csv": "C:\\Users\\syh61\\Desktop\\workplace\\cnn_subsystem\\data_split.csv"
+  }
+}

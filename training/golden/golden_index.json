@@ -1,0 +1,47 @@
+{
+  "case0_normal": {
+    "logits": [
+      -53,
+      52,
+      -3
+    ],
+    "pred": 1,
+    "logits_sha256": "e5771ab41e80fdae0bfeb11121118e26389eb4344522e543ac355a7651319e8d"
+  },
+  "case1_fall": {
+    "logits": [
+      -58,
+      52,
+      -3
+    ],
+    "pred": 1,
+    "logits_sha256": "d4da997ccf3123cd2fa96416f725481bd14be409534d7843ff55a420b03f53ef"
+  },
+  "case2_other": {
+    "logits": [
+      -41,
+      49,
+      0
+    ],
+    "pred": 1,
+    "logits_sha256": "799bd60f12f20540069c114f15cfabb3685eee181f66840ebc7b124fceae9000"
+  },
+  "sat_pos": {
+    "logits": [
+      -29,
+      32,
+      5
+    ],
+    "pred": 1,
+    "logits_sha256": "529bde46ecb32023bc49c730051e837fc6130e2873dcc05f7247f5c698d386c8"
+  },
+  "sat_neg": {
+    "logits": [
+      -67,
+      50,
+      -7
+    ],
+    "pred": 1,
+    "logits_sha256": "b0658d4be4b005d97d869579ed03a5ccc5734a2e980481489eeaf7263f5ccb58"
+  }
+}
