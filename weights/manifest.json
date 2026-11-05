@@ -1,0 +1,140 @@
+{
+  "class_order": [
+    "normal",
+    "fall",
+    "other"
+  ],
+  "class_encoding": {
+    "0": "normal",
+    "1": "fall",
+    "2": "other"
+  },
+  "layout": {
+    "conv": "idx = (oc*IC + ic)*9 + (kh*3 + kw)",
+    "fc": "idx = oc*32 + k",
+    "mem_format": "one hex value per line, two's complement"
+  },
+  "layers": [
+    {
+      "name": "L1",
+      "s_in": 0.99609375,
+      "s_w": 0.003952924191482424,
+      "s_out": 1.0,
+      "zp": 0,
+      "mult": 16515,
+      "shift": 22
+    },
+    {
+      "name": "L2",
+      "s_in": 1.0,
+      "s_w": 0.008662223815917969,
+      "s_out": 1.0,
+      "zp": 0,
+      "mult": 18166,
+      "shift": 21
+    },
+    {
+      "name": "L3",
+      "s_in": 1.0,
+      "s_w": 0.004480123519897461,
+      "s_out": 1.0,
+      "zp": 0,
+      "mult": 18791,
+      "shift": 22
+    },
+    {
+      "name": "FC",
+      "s_in": 1.0,
+      "s_w": 0.029915809631347656,
+      "s_out": 1.0,
+      "zp": 0,
+      "mult": 31369,
+      "shift": 20
+    }
+  ],
+  "checkpoint": "model\\checkpoint.npz",
+  "checkpoint_sha256": "ed9d5ccd9a23f8f4618f9a9265b612ef6d54013450227d8c9e8f5ecf93202d2f",
+  "checkpoint_note": "trained normal/fall/other INT8 QAT checkpoint (scripts/train_model.py, video-level URFD split)",
+  "files": {
+    "qin": "ac5c17b9dae6dd50c02e3634fbb9f58470453092392fd08483f02d8176ae365d",
+    "w1": "a6f28327d1e33d63a2439c657326f82e4cb48dbd1ee5aded491210a65e961069",
+    "w2": "b7b4f18097970321d94e219af813fe3733a1b2d4cef0457ccf52afd955c187fd",
+    "w3": "90e6e67fb9616093b203c9d6641c67921aef13ed25ce2b7a2db2602d5dc2c90c",
+    "w4": "a0f6c562d8fd997c0fe86bf32677811cbd8fd9503ff3e77ff2cf723a0f93f3a2",
+    "b1": "7e55b0271e81509aa30d1942957117695803948f2740ab3ec421adc5bc15d1f7",
+    "b2": "cc7405a93d549e7e044181671f590edb17628b8fbef75dd79e6acca517f4ab6c",
+    "b3": "18b9e5afbfc475e3e74a3d0e53ae28ea83bbd7b2aa0beb1d0e8cc96ad9c7e4dd",
+    "b4": "3e493b7db43f85f1e6fa2284173863e3568260afb729b90ca308b9f1f0f91b32",
+    "mult": "0012ca4b8cee475455abb9da8a2badbeb48fd5a01388c0a67b31560dda88f649",
+    "shift": "af88c40ec2787b6d33647ae19c8b12523bc99a95bdab9ec1f7fdb49f9dc54e8b"
+  },
+  "file_lengths": {
+    "qin": 256,
+    "w1": 72,
+    "w2": 1152,
+    "w3": 4608,
+    "w4": 96,
+    "b1": 8,
+    "b2": 16,
+    "b3": 32,
+    "b4": 3,
+    "mult": 32,
+    "shift": 32
+  },
+  "input": {
+    "size": 48,
+    "quant": "q_in = round((g-127.5)*256/255) via qin.mem"
+  },
+  "golden": {
+    "case0_normal": {
+      "logits": [
+        23,
+        15,
+        20
+      ],
+      "pred": 0,
+      "pred_class": "normal",
+      "logits_sha256": "da24892b29f7db02b16cca4f0957d50d5d9c449b0e05821ba7735d800906e643"
+    },
+    "case1_fall": {
+      "logits": [
+        3,
+        5,
+        0
+      ],
+      "pred": 1,
+      "pred_class": "fall",
+      "logits_sha256": "d6f5de5e2ce17f271bdbdeff195e14bed60024f6694dc35af6f748f95e8a2e75"
+    },
+    "case2_other": {
+      "logits": [
+        -2,
+        0,
+        1
+      ],
+      "pred": 2,
+      "pred_class": "other",
+      "logits_sha256": "9dccf73af4eacea968ac9c441a848cf21362b1ebb2b489cde5aaee97659b811f"
+    },
+    "sat_pos": {
+      "logits": [
+        20,
+        9,
+        32
+      ],
+      "pred": 2,
+      "pred_class": "other",
+      "logits_sha256": "c7f8cea1fdbd519ce59aafceaa6fa352f0c70902ea5fcece2ed8f094c528b4ae"
+    },
+    "sat_neg": {
+      "logits": [
+        9,
+        -5,
+        13
+      ],
+      "pred": 2,
+      "pred_class": "other",
+      "logits_sha256": "9c78d02694580d38ec1a9fce13d15221c25bafbb32a6e926d4db84650a3b28dc"
+    }
+  }
+}
